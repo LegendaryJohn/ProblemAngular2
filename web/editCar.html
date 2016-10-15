@@ -1,0 +1,31 @@
+<form class="col-md-4" style="margin-top: 10px;">
+    <h1>{{title}}</h1>
+    
+  <div class="form-group">
+    <label for="year">Year</label>
+        <input type="text" class="form-control" id="year" ng-model="car.year" placeholder="Year">
+    </div>
+    <div class="form-group">
+        <label for="reg">Registered</label>
+        <input type="date" class="form-control" id="reg" ng-model="car.registered" placeholder="Date">
+    </div>
+    <div class="form-group">
+        <label for="make">Make</label>
+        <input type="text" class="form-control" id="make" ng-model="car.make" placeholder="Make">
+    </div>
+    <div class="form-group">
+        <label for="model">Model</label>
+        <input type="text" class="form-control" id="model" ng-model="car.model" placeholder="Model">
+    </div>
+    <div class="form-group">
+        <label for="desc">Description</label>
+        <input type="text" class="form-control" id="desc" ng-model="car.description" placeholder="Description">
+    </div>
+    <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" class="form-control" id="price" ng-model="car.price" placeholder="Price">
+        
+        <button class="btn btn-success" type="submit" ng-click="editCar()">Save changes</button>
+    </div>
+    
+</form>
